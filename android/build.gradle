@@ -1,0 +1,44 @@
+// Buildscript block for Gradle classpath dependencies
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.0'
+        classpath "org.codehaus.groovy:groovy-all:3.0.9"  // or the latest version
+    }
+}
+
+// Plugins block at the very top
+plugins {
+    id("com.google.gms.google-services") version "4.4.2" apply false
+    // Add other plugins as needed
+}
+
+// All projects configuration
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    // Corrected Java home path
+}
+
+// Project build directory configuration
+rootProject.buildDir = "../build"
+
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+
+// Evaluation dependency for subprojects
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+// Clean task configuration
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
