@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "610908895359",
-    "project_id": "agropath-8f10b",
-    "storage_bucket": "agropath-8f10b.firebasestorage.app"
+    "project_number": "994884920910",
+    "project_id": "agropath-ebdf2",
+    "storage_bucket": "agropath-ebdf2.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:610908895359:android:85c65b44901dc4b697674a",
+        "mobilesdk_app_id": "1:994884920910:android:4b9260d9a19f1c88bd451f",
         "android_client_info": {
           "package_name": "com.example.agropath"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDDGT12oCvvU754muoxgUNrz8zKDP7aNUw"
+          "current_key": "AIzaSyB-v6u0mYCOyf-j0PAq-co1RT-HLL4oaJo"
         }
       ],
       "services": {
